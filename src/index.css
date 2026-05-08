@@ -1,0 +1,45 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background-color: #0B0D17;
+  cursor: none;
+  overflow-x: hidden;
+}
+
+/* custom cursor */
+.custom-cursor {
+  width: 24px;
+  height: 24px;
+  border: 2px solid rgba(139, 92, 246, 0.8);
+  border-radius: 50%;
+  position: fixed;
+  pointer-events: none;
+  z-index: 9999;
+  transition: transform 0.15s, width 0.2s, height 0.2s;
+  transform: translate(-50%, -50%);
+  backdrop-filter: blur(2px);
+  mix-blend-mode: difference;
+}
+
+.custom-cursor.hover {
+  width: 48px;
+  height: 48px;
+  background: rgba(139, 92, 246, 0.15);
+}
+
+/* hide default cursor on interactive elements */
+a, button, input, [role="button"] {
+  cursor: none;
+}
+
+::selection {
+  background: #8B5CF6;
+  color: white;
+}
