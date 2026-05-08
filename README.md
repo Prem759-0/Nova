@@ -53,7 +53,7 @@ It feels like **Apple’s design + Linear’s focus + Raycast’s speed** — wr
 ## 🚀 Quick Start
 
 ```bash
-git clone https://github.com/yourname/nova.git
+git clone https://github.com/Prem759-0/Nova.git
 cd nova
 npm install
 npm run dev
